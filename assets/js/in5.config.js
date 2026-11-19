@@ -276,9 +276,9 @@ function checkScroll(e, mode) {
 	docSpan = docMax - docMin;
 	var zoom = useZoomToScale ? ($('#container').css('zoom') || 1) : 1;
 	$('.pages .page').not('.activePage').each(function (index, elem) {
-		var $elem = $(elem), offset = $elem.offset();
-		elemMin = (vertMode) ? Math.floor(offset.top * zoom) : Math.floor(offset.left * zoom);
-		elemMax = (vertMode) ? Math.ceil(elemMin + $elem.height() * scale) : Math.ceil(elemMin + $elem.width() * scale);
+		var $elem = $(elem), bounds = elem.getBoundingClientRect();
+		elemMin = Math.floor(docMin + (vertMode ? bounds.top : bounds.left));
+		elemMax = Math.ceil(docMin + (vertMode ? bounds.bottom : bounds.right));
 		elemSpan = elemMax - elemMin;
 		if (docSpan <= elemSpan + 9) {
 			elemCenter = elemMin + elemSpan * .5;
@@ -479,9 +479,9 @@ function initPanZoom() {
 		if(!this.drag) return !1;
 		var pageX = (e.pageX != undefined) ? e.pageX : e.originalEvent.touches[0].pageX;
 		var pageY = (e.pageY != undefined) ? e.pageY : e.originalEvent.touches[0].pageY;
-		var newX = this.originX + (pageX - this.startX);
-		var newY = this.originY + (pageY - this.startY);
-		this.reposition(newX / this.scale, newY / this.scale);
+		var newX = this.originX + (pageX - this.startX) / this.scale;
+		var newY = this.originY + (pageY - this.startY) / this.scale;
+		this.reposition(newX, newY);
 	}).on('vmouseup pointerup vmouseout mouseleave', function(e){ this.drag = !1; }).each(function(index, el) {
 		var calculatePosition = function(){
 			var c = $(el), p = c.parent('.panzoom').removeClass('dragging'), cw = el.width, ch = el.height,
@@ -846,8 +846,8 @@ function initPageMode(){
 			next:function(ref){var ind=(ref?$(ref).parents('.page'):$('.activePage')).next().index(); if(ind!=-1) nav.to(ind+1);},
 			to:function (n,c,q) {
 				window.scrolling=!0;
-				var scale = getCurrentScale($('#container')), page = $('.page').eq(n - 1)[0], offset = {left:page.offsetLeft, top:page.offsetTop};
-				var scrollTarg = { left:offset.left*scale, top:offset.top*scale };
+				var scale = getCurrentScale($('#container')), page = $('.page').eq(n - 1)[0], bounds = page.getBoundingClientRect();
+				var scrollTarg = {left:bounds.left + window.scrollX, top:bounds.top + window.scrollY};
 				if(c){ scrollTarg = {left:scrollTarg.left+c[0]*scale, top:scrollTarg.top+c[1]*scale}; }
 				if(q) { 
 					var $q = $(q);
@@ -1053,9 +1053,10 @@ else $('body').removeClass('fsmode');
 var CSSMtx = (window.hasOwnProperty('WebKitCSSMatrix')) ? WebKitCSSMatrix : MSCSSMatrix;
 function getCurrentScale(targ, zooming) {
 	var targ = targ instanceof jQuery ? targ[0] : targ, $body = $('body');
+	var publicationScale = Number(document.documentElement.style.getPropertyValue('--publication-scale')) || 1;
 	var zoom = useZoomToScale ? $(targ).css('zoom') : 1;
-	if(zoom && zoom !== 1) return zoom;
-	return zooming || $body.hasClass('zoomed') || $body.is('[data-scaled-to]') ? window.scaleFactor || new CSSMtx(window.getComputedStyle(targ).transform).a : 1;
+	if(zoom && zoom !== 1) return (Number(zoom) || 1) * publicationScale;
+	return publicationScale * (zooming || $body.hasClass('zoomed') || $body.is('[data-scaled-to]') ? window.scaleFactor || new CSSMtx(window.getComputedStyle(targ).transform).a : 1);
 }
 $(window).on('docReady', function(e){
 	if(!lazyLoad && (isSafari || isFF)){ $('#container img[src$=".gif"]:visible').each(function(){ $(this).attr("src", $(this).attr('src')); }); }

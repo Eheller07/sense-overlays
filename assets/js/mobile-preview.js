@@ -4,4 +4,5 @@ function fitPublicationToViewport() {
 }
 
 fitPublicationToViewport();
+window.addEventListener('load', fitPublicationToViewport);
 window.addEventListener('resize', fitPublicationToViewport);
