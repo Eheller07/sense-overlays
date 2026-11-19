@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>感官漫游_Overlays整合作业</title>
+<meta name="apple-mobile-web-app-title" content="感官漫游_Overlays整合作业">
+<meta name="generator" content="In5 v3.8.25">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/vmouse.min.js"></script>
+<script src="assets/js/mediaelement-and-player.min.js"></script>
+<link rel="stylesheet" href="assets/css/mediaelementplayer.min.css" media="all"/>
+<script type="text/javascript" src="assets/js/jquery.scrollTo.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="assets/js/in5.config.js"></script>
+<link rel="stylesheet" href="assets/css/pages.css" media="all">
+<style media="all and (-ms-high-contrast:none)">*::-ms-backdrop,.svg-img{width:100%;}</style>
+<style id="assignment-scroll-styles">
+#item5907.assignment-scroll-text{position:absolute;left:48px!important;top:240px!important;width:578px!important;height:396px!important;box-sizing:border-box;padding:24px 26px;background:#f5f0e6;color:#161d1f;overflow-x:hidden!important;overflow-y:auto!important;font:18px/1.72 "Microsoft YaHei",sans-serif;touch-action:pan-y;overscroll-behavior:contain;letter-spacing:0;}
+.assignment-scroll-text p{margin:0 0 16px;line-height:1.72;}.assignment-scroll-text p:first-child{font-weight:bold;}
+#item6345.assignment-scroll-images{position:absolute;left:48px!important;top:240px!important;width:928px!important;height:396px!important;overflow-x:auto!important;overflow-y:hidden!important;background:#222c2e;touch-action:pan-x;overscroll-behavior:contain;cursor:grab;scrollbar-color:#d1ad6e #222c2e;}
+.assignment-scroll-images>div{display:flex;width:max-content;gap:24px;height:100%;padding:20px;box-sizing:border-box;}.assignment-scroll-images figure{width:504px;flex:none;margin:0;}.assignment-scroll-images figure img{width:504px;height:315px;object-fit:cover;pointer-events:none;}.assignment-scroll-images figcaption{font:12px/30px Arial,sans-serif;color:#d1ad6e;letter-spacing:2px;}
+</style><link rel="stylesheet" href="assets/css/mobile-preview.css">
+<script src="assets/js/mobile-preview.js"></script>
+</head>
+<body>
+<!--[if lt IE 10]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+<div id="loadIndicator"><img src="assets/images/loading.gif" alt="loading..."/><span>&nbsp;</span></div>
+<div id="container-wrap">
+<div id="container">
+<ul class="pages paper-vertical" id="slider">
+  <li class="page" data-name="1">
+    <div class="page-scale-wrap mq-none mq-default" role="region" data-layout-name="undefined" style="width:1024px;height:768px;">
+      <div id="item2033" alt="Cover Background" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="Cover Venice" style="left:543px !important;" id="item2034" class="pageItem " data-src="assets/images/item_2034.jpg"/>
+      <img src="assets/images/blank.gif" alt="SENSE / ISSUE 01" class="pageItem hd" style="left:48px !important;top:42px !important;" id="item2061" data-src="assets/images/item_2061.png"/>
+      <div id="item2065" alt="Rectangle" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="感官漫游" class="pageItem hd" style="left:46px !important;top:139px !important;" id="item2085" data-src="assets/images/item_2085.png"/>
+      <img src="assets/images/blank.gif" alt="STYLE / SPACE / JOURNEY" class="pageItem hd" style="left:51px !important;top:253px !important;" id="item2108" data-src="assets/images/item_2108.png"/>
+      <img src="assets/images/blank.gif" alt="从时尚影像到城市风景， 让阅读随着指尖展开。" class="pageItem hd" style="left:51px !important;top:316px !important;" id="item2131" data-src="assets/images/item_2131.png"/>
+      <img src="assets/images/blank.gif" alt="点击下方目录，进入互动体验" class="pageItem hd" style="left:51px !important;top:438px !important;" id="item2154" data-src="assets/images/item_2154.png"/>
+      <div id="item2158" alt="Rectangle" class="pageItem ">&nbsp;</div><a href="javascript:nav.to(2);">
+        <img src="assets/images/blank.gif" alt="超链接" class="pageItem hd" style="left:66px !important;top:505px !important;" id="item2178" data-src="assets/images/item_2178.png"/>
+      </a><div id="item2185" alt="Rectangle" class="pageItem ">&nbsp;</div><a href="javascript:nav.to(3);">
+        <img src="assets/images/blank.gif" alt="幻灯片" class="pageItem hd" style="left:216px !important;top:505px !important;" id="item2205" data-src="assets/images/item_2205.png"/>
+      </a><div id="item2212" alt="Rectangle" class="pageItem ">&nbsp;</div><a href="javascript:nav.to(4);">
+        <img src="assets/images/blank.gif" alt="图像序列" class="pageItem hd" style="left:366px !important;top:505px !important;" id="item2232" data-src="assets/images/item_2232.png"/>
+      </a><div id="item2239" alt="Rectangle" class="pageItem ">&nbsp;</div><a href="javascript:nav.to(5);">
+        <img src="assets/images/blank.gif" alt="音频" class="pageItem hd" style="left:66px !important;top:556px !important;" id="item2259" data-src="assets/images/item_2259.png"/>
+      </a><div id="item2266" alt="Rectangle" class="pageItem ">&nbsp;</div><a href="javascript:nav.to(6);">
+        <img src="assets/images/blank.gif" alt="视频" class="pageItem hd" style="left:216px !important;top:556px !important;" id="item2286" data-src="assets/images/item_2286.png"/>
+      </a><div id="item2293" alt="Rectangle" class="pageItem ">&nbsp;</div><a href="javascript:nav.to(7);">
+        <img src="assets/images/blank.gif" alt="Web 内容" class="pageItem hd" style="left:366px !important;top:556px !important;" id="item2313" data-src="assets/images/item_2313.png"/>
+      </a><div id="item2320" alt="Rectangle" class="pageItem ">&nbsp;</div><a href="javascript:nav.to(8);">
+        <img src="assets/images/blank.gif" alt="平移与缩放" class="pageItem hd" style="left:66px !important;top:607px !important;" id="item2340" data-src="assets/images/item_2340.png"/>
+      </a><div id="item2347" alt="Rectangle" class="pageItem ">&nbsp;</div><a href="javascript:nav.to(9);">
+        <img src="assets/images/blank.gif" alt="滚动文本" class="pageItem hd" style="left:216px !important;top:607px !important;" id="item2367" data-src="assets/images/item_2367.png"/>
+      </a><div id="item2374" alt="Rectangle" class="pageItem ">&nbsp;</div><a href="javascript:nav.to(10);">
+        <img src="assets/images/blank.gif" alt="滑动图片" class="pageItem hd" style="left:366px !important;top:607px !important;" id="item2394" data-src="assets/images/item_2394.png"/>
+      </a><img src="assets/images/blank.gif" alt="8 类 Overlays · 9 处交互体验" class="pageItem hd" style="left:51px !important;top:711px !important;" id="item2420" data-src="assets/images/item_2420.png"/>
+    </div>
+  </li>
+  <li class="page" data-name="2">
+    <div class="page-scale-wrap mq-none mq-default" role="region" data-layout-name="undefined" style="width:1024px;height:768px;">
+      <div id="item2424" alt="Background" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="SENSE / INTERACTIVE EDITION" class="pageItem hd" style="left:48px !important;top:32px !important;" id="item2444" data-src="assets/images/item_2444.png"/>
+      <img src="assets/images/blank.gif" alt="2 / HYPERLINK" class="pageItem hd" style="left:798px !important;top:32px !important;" id="item2467" data-src="assets/images/item_2467.png"/>
+      <div id="item2471" alt="Rectangle" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="从一张图片，抵达新世界" class="pageItem hd" style="left:48px !important;top:103px !important;" id="item2491" data-src="assets/images/item_2491.png"/>
+      <img src="assets/images/blank.gif" alt="精选护肤影像 / 点击按钮打开品牌网站" class="pageItem hd" style="left:50px !important;top:175px !important;" id="item2514" data-src="assets/images/item_2514.png"/>
+      <div id="item2518" alt="Rectangle" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="SENSE / 11.19 / INTERACTIVE DESIGN" class="pageItem hd" style="left:48px !important;top:718px !important;" id="item2538" data-src="assets/images/item_2538.png"/>
+      <img src="assets/images/blank.gif" alt="02" class="pageItem hd" style="left:914px !important;top:717px !important;" id="item2561" data-src="assets/images/item_2561.png"/>
+      <img src="assets/images/blank.gif" alt="BEAUTY / CONNECT" class="pageItem hd" style="left:51px !important;top:268px !important;" id="item2594" data-src="assets/images/item_2594.png"/>
+      <img src="assets/images/blank.gif" alt="阅读不止于此" class="pageItem hd" style="left:50px !important;top:327px !important;" id="item2617" data-src="assets/images/item_2617.png"/>
+      <img src="assets/images/blank.gif" alt="把页面与外部信息连接起来。 轻点下方按钮，探索更多品牌故事。" class="pageItem hd" style="left:51px !important;top:432px !important;" id="item2640" data-src="assets/images/item_2640.png"/>
+      <div id="item2644" alt="Rectangle" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="轻点金色按钮或右侧图片，打开外部网页。" class="pageItem hd" style="left:50px !important;top:656px !important;" id="item2693" data-src="assets/images/item_2693.png"/><a href="javascript:nav.to(1);">
+        <img src="assets/images/blank.gif" alt="Back to Contents 1" class="pageItem hd" style="left:740px !important;top:716px !important;" id="item6539" data-src="assets/images/item_6539.png"/>
+      </a><a href="javascript:nav.to(3);">
+        <img src="assets/images/blank.gif" alt="Next Page 1" class="pageItem hd" style="left:840px !important;top:716px !important;" id="item6565" data-src="assets/images/item_6565.png"/>
+      </a><a href="https://www.chanel.com/cn/" target="_blank">
+        <img src="assets/images/blank.gif" alt="探索品牌网站 →" class="pageItem hd" style="left:66px !important;top:560px !important;" id="item2664" data-src="assets/images/item_2664.png"/>
+      </a><a href="https://www.chanel.com/cn/" target="_blank">
+        <img src="assets/images/blank.gif" alt="Hyperlink Hero" style="left:546px !important;top:239px !important;" id="item2565" class="pageItem " data-src="assets/images/item_2565.jpg"/>
+      </a></div>
+  </li>
+  <li class="page" data-name="3">
+    <div class="page-scale-wrap mq-none mq-default" role="region" data-layout-name="undefined" style="width:1024px;height:768px;">
+      <div id="item2697" alt="Background" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="SENSE / INTERACTIVE EDITION" class="pageItem hd" style="left:48px !important;top:32px !important;" id="item2717" data-src="assets/images/item_2717.png"/>
+      <img src="assets/images/blank.gif" alt="3 / SLIDESHOW" class="pageItem hd" style="left:798px !important;top:32px !important;" id="item2740" data-src="assets/images/item_2740.png"/>
+      <div id="item2744" alt="Rectangle" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="风格，在切换中发生" class="pageItem hd" style="left:48px !important;top:103px !important;" id="item2764" data-src="assets/images/item_2764.png"/>
+      <img src="assets/images/blank.gif" alt="三张时尚影像 / 左右轻扫，或点击箭头切换" class="pageItem hd" style="left:50px !important;top:175px !important;" id="item2787" data-src="assets/images/item_2787.png"/>
+      <div id="item2791" alt="Rectangle" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="SENSE / 11.19 / INTERACTIVE DESIGN" class="pageItem hd" style="left:48px !important;top:718px !important;" id="item2811" data-src="assets/images/item_2811.png"/>
+      <img src="assets/images/blank.gif" alt="03" class="pageItem hd" style="left:914px !important;top:717px !important;" id="item2834" data-src="assets/images/item_2834.png"/>
+      <img src="assets/images/blank.gif" alt="01—03" class="pageItem hd" style="left:781px !important;top:269px !important;" id="item2892" data-src="assets/images/item_2892.png"/>
+      <img src="assets/images/blank.gif" alt="每一次切换， 发现另一种气质。" class="pageItem hd" style="left:780px !important;top:352px !important;" id="item2915" data-src="assets/images/item_2915.png"/>
+      <img src="assets/images/blank.gif" alt="FASHION STUDIES" class="pageItem hd" style="left:781px !important;top:474px !important;" id="item2938" data-src="assets/images/item_2938.png"/>
+      <img src="assets/images/blank.gif" alt="左右轻扫主图，或点击右侧箭头。" class="pageItem hd" style="left:50px !important;top:656px !important;" id="item3015" data-src="assets/images/item_3015.png"/><a href="javascript:nav.to(1);">
+        <img src="assets/images/blank.gif" alt="Back to Contents 2" class="pageItem hd" style="left:740px !important;top:716px !important;" id="item6591" data-src="assets/images/item_6591.png"/>
+      </a><a href="javascript:nav.to(4);">
+        <img src="assets/images/blank.gif" alt="Next Page 2" class="pageItem hd" style="left:840px !important;top:716px !important;" id="item6617" data-src="assets/images/item_6617.png"/>
+      </a>
+      <button data-id="2942" name="←" data-loop="1" data-click-prev="7050" aria-label="←" id="item2942" class="pageItem ">
+        <div class="pageItem state btn-off">
+          <div id="item2943" alt="Rectangle" class="pageItem ">&nbsp;</div>
+          <img src="assets/images/blank.gif" alt="←" class="pageItem hd" id="item2964" data-src="assets/images/item_2964.png"/>
+        </div>
+      </button>
+      <button data-id="2969" name="→" data-loop="1" data-click-next="7050" aria-label="→" id="item2969" class="pageItem ">
+        <div class="pageItem state btn-off">
+          <div id="item2970" alt="Rectangle" class="pageItem ">&nbsp;</div>
+          <img src="assets/images/blank.gif" alt="→" class="pageItem hd" id="item2991" data-src="assets/images/item_2991.png"/>
+        </div>
+      </button>
+      <div tabindex="-1" data-useswipe="1" data-loopswipe="1" data-crossfade="0.5" data-id="7050" name="Overlay 02 - Fashion Slideshow" alt="Overlay 02 - Fashion Slideshow" id="item7050" class="pageItem mso slideshow ">
+        <div aria-hidden="false" class="pageItem state active" name="LOOK 01">
+          <img src="assets/images/blank.gif" alt="Fashion 1" id="item7055" class="pageItem " data-src="assets/images/item_7055.jpg"/>
+        </div>
+        <div aria-hidden="true" class="pageItem state" name="LOOK 02">
+          <img src="assets/images/blank.gif" alt="Fashion 2" id="item7063" class="pageItem " data-src="assets/images/item_7063.jpg"/>
+        </div>
+        <div aria-hidden="true" class="pageItem state" name="LOOK 03">
+          <img src="assets/images/blank.gif" alt="Fashion 3" id="item7071" class="pageItem " data-src="assets/images/item_7071.jpg"/>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li class="page" data-name="4">
+    <div class="page-scale-wrap mq-none mq-default" role="region" data-layout-name="undefined" style="width:1024px;height:768px;">
+      <div id="item4463" alt="Background" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="SENSE / INTERACTIVE EDITION" class="pageItem hd" style="left:48px !important;top:32px !important;" id="item4483" data-src="assets/images/item_4483.png"/>
+      <img src="assets/images/blank.gif" alt="4 / IMAGE SEQUENCE" class="pageItem hd" style="left:798px !important;top:32px !important;" id="item4506" data-src="assets/images/item_4506.png"/>
+      <div id="item4510" alt="Rectangle" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="转一转，看见空间的另一面" class="pageItem hd" style="left:48px !important;top:103px !important;" id="item4530" data-src="assets/images/item_4530.png"/>
+      <img src="assets/images/blank.gif" alt="36 帧沙发旋转序列 / 在图片上左右拖动" class="pageItem hd" style="left:50px !important;top:175px !important;" id="item4553" data-src="assets/images/item_4553.png"/>
+      <div id="item4557" alt="Rectangle" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="SENSE / 11.19 / INTERACTIVE DESIGN" class="pageItem hd" style="left:48px !important;top:718px !important;" id="item4577" data-src="assets/images/item_4577.png"/>
+      <img src="assets/images/blank.gif" alt="04" class="pageItem hd" style="left:914px !important;top:717px !important;" id="item4600" data-src="assets/images/item_4600.png"/>
+      <div id="item4604" alt="Rectangle" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="SPACE / 360°" class="pageItem hd" style="left:568px !important;top:258px !important;" id="item4631" data-src="assets/images/item_4631.png"/>
+      <img src="assets/images/blank.gif" alt="换一个角度生活" class="pageItem hd" style="left:566px !important;top:324px !important;" id="item4654" data-src="assets/images/item_4654.png"/>
+      <img src="assets/images/blank.gif" alt="完整一圈，36 个视角。 拖动幅度决定旋转速度， 停下指尖，留下喜欢的一面。" class="pageItem hd" style="left:568px !important;top:414px !important;" id="item4677" data-src="assets/images/item_4677.png"/>
+      <img src="assets/images/blank.gif" alt="← 拖动探索 →" class="pageItem hd" style="left:568px !important;top:562px !important;" id="item4700" data-src="assets/images/item_4700.png"/>
+      <img src="assets/images/blank.gif" alt="在沙发画面中左右拖动，循环查看 360° 视角。" class="pageItem hd" style="left:50px !important;top:656px !important;" id="item4723" data-src="assets/images/item_4723.png"/><a href="javascript:nav.to(1);">
+        <img src="assets/images/blank.gif" alt="Back to Contents 3" class="pageItem hd" style="left:740px !important;top:716px !important;" id="item6643" data-src="assets/images/item_6643.png"/>
+      </a><a href="javascript:nav.to(5);">
+        <img src="assets/images/blank.gif" alt="Next Page 3" class="pageItem hd" style="left:840px !important;top:716px !important;" id="item6669" data-src="assets/images/item_6669.png"/>
+      </a><div id="item4605" data-id="4605" class="pageItem mso slideshow seq" role="presentation" data-useswipe="1" data-loopswipe="1" alt="Overlay 03 - Sofa 360">
+        <img alt="slideshow image 1" role="presentation" class="state active" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/01sofa.jpg"/>
+        <img alt="slideshow image 2" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/02sofa.jpg"/>
+        <img alt="slideshow image 3" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/03sofa.jpg"/>
+        <img alt="slideshow image 4" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/04sofa.jpg"/>
+        <img alt="slideshow image 5" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/05sofa.jpg"/>
+        <img alt="slideshow image 6" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/06sofa.jpg"/>
+        <img alt="slideshow image 7" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/07sofa.jpg"/>
+        <img alt="slideshow image 8" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/08sofa.jpg"/>
+        <img alt="slideshow image 9" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/09sofa.jpg"/>
+        <img alt="slideshow image 10" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/10sofa.jpg"/>
+        <img alt="slideshow image 11" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/11sofa.jpg"/>
+        <img alt="slideshow image 12" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/12sofa.jpg"/>
+        <img alt="slideshow image 13" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/13sofa.jpg"/>
+        <img alt="slideshow image 14" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/14sofa.jpg"/>
+        <img alt="slideshow image 15" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/15sofa.jpg"/>
+        <img alt="slideshow image 16" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/16sofa.jpg"/>
+        <img alt="slideshow image 17" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/17sofa.jpg"/>
+        <img alt="slideshow image 18" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/18sofa.jpg"/>
+        <img alt="slideshow image 19" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/19sofa.jpg"/>
+        <img alt="slideshow image 20" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/20sofa.jpg"/>
+        <img alt="slideshow image 21" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/21sofa.jpg"/>
+        <img alt="slideshow image 22" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/22sofa.jpg"/>
+        <img alt="slideshow image 23" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/23sofa.jpg"/>
+        <img alt="slideshow image 24" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/24sofa.jpg"/>
+        <img alt="slideshow image 25" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/25sofa.jpg"/>
+        <img alt="slideshow image 26" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/26sofa.jpg"/>
+        <img alt="slideshow image 27" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/27sofa.jpg"/>
+        <img alt="slideshow image 28" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/28sofa.jpg"/>
+        <img alt="slideshow image 29" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/29sofa.jpg"/>
+        <img alt="slideshow image 30" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/30sofa.jpg"/>
+        <img alt="slideshow image 31" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/31sofa.jpg"/>
+        <img alt="slideshow image 32" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/32sofa.jpg"/>
+        <img alt="slideshow image 33" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/33sofa.jpg"/>
+        <img alt="slideshow image 34" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/34sofa.jpg"/>
+        <img alt="slideshow image 35" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/35sofa.jpg"/>
+        <img alt="slideshow image 36" role="presentation" class="state" src="assets/images/blank.gif" data-src="assets/images/item4605_seq/36sofa.jpg"/>
+      </div>
+    </div>
+  </li>
+  <li class="page" data-name="5">
+    <div class="page-scale-wrap mq-none mq-default" role="region" data-layout-name="undefined" style="width:1024px;height:768px;">
+      <div id="item4727" alt="Background" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="SENSE / INTERACTIVE EDITION" class="pageItem hd" style="left:48px !important;top:32px !important;" id="item4747" data-src="assets/images/item_4747.png"/>
+      <img src="assets/images/blank.gif" alt="5 / AUDIO" class="pageItem hd" style="left:798px !important;top:32px !important;" id="item4770" data-src="assets/images/item_4770.png"/>
+      <div id="item4774" alt="Rectangle" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="给旅途，添一段声音" class="pageItem hd" style="left:48px !important;top:103px !important;" id="item4794" data-src="assets/images/item_4794.png"/>
+      <img src="assets/images/blank.gif" alt="风景与音乐 / 点按播放，随时暂停" class="pageItem hd" style="left:50px !important;top:175px !important;" id="item4817" data-src="assets/images/item_4817.png"/>
+      <div id="item4821" alt="Rectangle" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="SENSE / 11.19 / INTERACTIVE DESIGN" class="pageItem hd" style="left:48px !important;top:718px !important;" id="item4841" data-src="assets/images/item_4841.png"/>
+      <img src="assets/images/blank.gif" alt="05" class="pageItem hd" style="left:914px !important;top:717px !important;" id="item4864" data-src="assets/images/item_4864.png"/>
+      <img src="assets/images/blank.gif" alt="Audio Landscape" style="left:48px !important;top:239px !important;" id="item4868" class="pageItem " data-src="assets/images/item_4868.jpg"/>
+      <div id="item4876" alt="Rectangle" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="LISTEN / 00:35" class="pageItem hd" style="left:671px !important;top:267px !important;" id="item4896" data-src="assets/images/item_4896.png"/>
+      <img src="assets/images/blank.gif" alt="听见风景" class="pageItem hd" style="left:669px !important;top:331px !important;" id="item4919" data-src="assets/images/item_4919.png"/>
+      <img src="assets/images/blank.gif" alt="让声音成为阅读的背景。 为这一刻，放慢一点。" class="pageItem hd" style="left:671px !important;top:412px !important;" id="item4942" data-src="assets/images/item_4942.png"/>
+      <img src="assets/images/blank.gif" alt="点击“播放”聆听音乐；点击“暂停”控制播放。" class="pageItem hd" style="left:50px !important;top:656px !important;" id="item5034" data-src="assets/images/item_5034.png"/><a href="javascript:nav.to(1);">
+        <img src="assets/images/blank.gif" alt="Back to Contents 4" class="pageItem hd" style="left:740px !important;top:716px !important;" id="item6695" data-src="assets/images/item_6695.png"/>
+      </a><a href="javascript:nav.to(6);">
+        <img src="assets/images/blank.gif" alt="Next Page 4" class="pageItem hd" style="left:840px !important;top:716px !important;" id="item6721" data-src="assets/images/item_6721.png"/>
+      </a><div id="item4946" class="pageItem" style="height:31px;width:280px;left:670px !important;top:497px !important;" alt="Overlay 04 - Music">
+        <img class="pageItem" height="31" width="280" src="assets/images/blank.gif" alt="audio" onclick="toggleAudio(this);" data-src="assets/images/item_4946.png"/>
+        <audio data-id="4946" class="mejs-has-controls" controls="controls">
+          <source type="audio/mp3" src="assets/media/music.mp3"/>
+        </audio>
+      </div>
+      <button data-id="4961" name="播放" data-click-play="4946" aria-label="播放" id="item4961" class="pageItem ">
+        <div class="pageItem state btn-off">
+          <div id="item4962" alt="Rectangle" class="pageItem ">&nbsp;</div>
+          <img src="assets/images/blank.gif" alt="播放" class="pageItem hd" id="item4983" data-src="assets/images/item_4983.png"/>
+        </div>
+      </button>
+      <button data-id="4988" name="暂停" data-click-pause="4946" aria-label="暂停" id="item4988" class="pageItem ">
+        <div class="pageItem state btn-off">
+          <div id="item4989" alt="Rectangle" class="pageItem ">&nbsp;</div>
+          <img src="assets/images/blank.gif" alt="暂停" class="pageItem hd" id="item5010" data-src="assets/images/item_5010.png"/>
+        </div>
+      </button>
+    </div>
+  </li>
+  <li class="page" data-name="6">
+    <div class="page-scale-wrap mq-none mq-default" role="region" data-layout-name="undefined" style="width:1024px;height:768px;">
+      <div id="item5038" alt="Background" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="SENSE / INTERACTIVE EDITION" class="pageItem hd" style="left:48px !important;top:32px !important;" id="item5058" data-src="assets/images/item_5058.png"/>
+      <img src="assets/images/blank.gif" alt="6 / VIDEO" class="pageItem hd" style="left:798px !important;top:32px !important;" id="item5081" data-src="assets/images/item_5081.png"/>
+      <div id="item5085" alt="Rectangle" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="把片刻，变成一段故事" class="pageItem hd" style="left:48px !important;top:103px !important;" id="item5105" data-src="assets/images/item_5105.png"/>
+      <img src="assets/images/blank.gif" alt="本地视频 / 约 1 分钟 / 点击画面播放" class="pageItem hd" style="left:50px !important;top:175px !important;" id="item5128" data-src="assets/images/item_5128.png"/>
+      <div id="item5132" alt="Rectangle" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="SENSE / 11.19 / INTERACTIVE DESIGN" class="pageItem hd" style="left:48px !important;top:718px !important;" id="item5152" data-src="assets/images/item_5152.png"/>
+      <img src="assets/images/blank.gif" alt="06" class="pageItem hd" style="left:914px !important;top:717px !important;" id="item5175" data-src="assets/images/item_5175.png"/>
+      <img src="assets/images/blank.gif" alt="MOTION / 01:00" class="pageItem hd" style="left:695px !important;top:267px !important;" id="item5252" data-src="assets/images/item_5252.png"/>
+      <img src="assets/images/blank.gif" alt="让画面流动" class="pageItem hd" style="left:692px !important;top:334px !important;" id="item5275" data-src="assets/images/item_5275.png"/>
+      <img src="assets/images/blank.gif" alt="点击播放， 让时间进入页面。 播放条可用于暂停与定位。" class="pageItem hd" style="left:695px !important;top:429px !important;" id="item5298" data-src="assets/images/item_5298.png"/>
+      <img src="assets/images/blank.gif" alt="点击视频海报播放；使用控制条暂停或拖动进度。" class="pageItem hd" style="left:50px !important;top:656px !important;" id="item5321" data-src="assets/images/item_5321.png"/><a href="javascript:nav.to(1);">
+        <img src="assets/images/blank.gif" alt="Back to Contents 5" class="pageItem hd" style="left:740px !important;top:716px !important;" id="item6747" data-src="assets/images/item_6747.png"/>
+      </a><a href="javascript:nav.to(7);">
+        <img src="assets/images/blank.gif" alt="Next Page 5" class="pageItem hd" style="left:840px !important;top:716px !important;" id="item6773" data-src="assets/images/item_6773.png"/>
+      </a><div id="item5179" class="pageItem" alt="Overlay 05 - Video" style="left:48px !important;top:236px !important;">
+        <video width="600" height="400" data-id="5179" poster="assets/images/video-poster.jpg" data-stoplast="1" webkit-playsinline="playsinline" playsinline="playsinline" class="mejs-none">
+          <source src="assets/media/CCTV.mp4" type="video/mp4"/>
+        </video>
+      </div>
+    </div>
+  </li>
+  <li class="page" data-name="7">
+    <div class="page-scale-wrap mq-none mq-default" role="region" data-layout-name="undefined" style="width:1024px;height:768px;">
+      <div id="item5330" alt="Background" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="SENSE / INTERACTIVE EDITION" class="pageItem hd" style="left:48px !important;top:32px !important;" id="item5350" data-src="assets/images/item_5350.png"/>
+      <img src="assets/images/blank.gif" alt="7 / WEB CONTENT" class="pageItem hd" style="left:798px !important;top:32px !important;" id="item5373" data-src="assets/images/item_5373.png"/>
+      <div id="item5377" alt="Rectangle" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="在页面里，遇见一个小世界" class="pageItem hd" style="left:48px !important;top:103px !important;" id="item5397" data-src="assets/images/item_5397.png"/>
+      <img src="assets/images/blank.gif" alt="嵌入式互动卡片 / 轻点风景，切换心情" class="pageItem hd" style="left:50px !important;top:175px !important;" id="item5420" data-src="assets/images/item_5420.png"/>
+      <div id="item5424" alt="Rectangle" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="SENSE / 11.19 / INTERACTIVE DESIGN" class="pageItem hd" style="left:48px !important;top:718px !important;" id="item5444" data-src="assets/images/item_5444.png"/>
+      <img src="assets/images/blank.gif" alt="07" class="pageItem hd" style="left:914px !important;top:717px !important;" id="item5467" data-src="assets/images/item_5467.png"/>
+      <img src="assets/images/blank.gif" alt="轻点三张风景卡片，切换下方的色彩与文字。" class="pageItem hd" style="left:50px !important;top:656px !important;" id="item5497" data-src="assets/images/item_5497.png"/><a href="javascript:nav.to(1);">
+        <img src="assets/images/blank.gif" alt="Back to Contents 6" class="pageItem hd" style="left:740px !important;top:716px !important;" id="item6799" data-src="assets/images/item_6799.png"/>
+      </a><a href="javascript:nav.to(8);">
+        <img src="assets/images/blank.gif" alt="Next Page 6" class="pageItem hd" style="left:840px !important;top:716px !important;" id="item6825" data-src="assets/images/item_6825.png"/>
+      </a><div id="item5471_container" class="pageItem iframe-container" alt="Overlay 06 - Local Web Content">
+        <iframe style="width:100% !important; height:100% !important" src="assets/item_5471_folder/index.html">
+          <p>Either content is missing or your browser does not support iframes.</p>
+        </iframe>
+      </div>
+    </div>
+  </li>
+  <li class="page" data-name="8">
+    <div class="page-scale-wrap mq-none mq-default" role="region" data-layout-name="undefined" style="width:1024px;height:768px;">
+      <div id="item5501" alt="Background" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="SENSE / INTERACTIVE EDITION" class="pageItem hd" style="left:48px !important;top:32px !important;" id="item5521" data-src="assets/images/item_5521.png"/>
+      <img src="assets/images/blank.gif" alt="8 / PAN & ZOOM" class="pageItem hd" style="left:798px !important;top:32px !important;" id="item5544" data-src="assets/images/item_5544.png"/>
+      <div id="item5548" alt="Rectangle" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="把远方，拉到眼前" class="pageItem hd" style="left:48px !important;top:103px !important;" id="item5568" data-src="assets/images/item_5568.png"/>
+      <img src="assets/images/blank.gif" alt="威尼斯运河 / 双指缩放，拖动探索细节" class="pageItem hd" style="left:50px !important;top:175px !important;" id="item5591" data-src="assets/images/item_5591.png"/>
+      <div id="item5595" alt="Rectangle" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="SENSE / 11.19 / INTERACTIVE DESIGN" class="pageItem hd" style="left:48px !important;top:718px !important;" id="item5615" data-src="assets/images/item_5615.png"/>
+      <img src="assets/images/blank.gif" alt="08" class="pageItem hd" style="left:914px !important;top:717px !important;" id="item5638" data-src="assets/images/item_5638.png"/>
+      <img src="assets/images/blank.gif" alt="VENICE / DETAILS" class="pageItem hd" style="left:788px !important;top:267px !important;" id="item5666" data-src="assets/images/item_5666.png"/>
+      <img src="assets/images/blank.gif" alt="沿着河道 慢慢漫游" class="pageItem hd" style="left:786px !important;top:337px !important;" id="item5689" data-src="assets/images/item_5689.png"/>
+      <img src="assets/images/blank.gif" alt="放大一扇窗， 跟随一艘船。 城市的细节，值得停留。" class="pageItem hd" style="left:788px !important;top:465px !important;" id="item5712" data-src="assets/images/item_5712.png"/>
+      <img src="assets/images/blank.gif" alt="在图片中缩放并拖动；触屏可使用双指手势。" class="pageItem hd" style="left:50px !important;top:656px !important;" id="item5735" data-src="assets/images/item_5735.png"/><a href="javascript:nav.to(1);">
+        <img src="assets/images/blank.gif" alt="Back to Contents 7" class="pageItem hd" style="left:740px !important;top:716px !important;" id="item6851" data-src="assets/images/item_6851.png"/>
+      </a><a href="javascript:nav.to(9);">
+        <img src="assets/images/blank.gif" alt="Next Page 7" class="pageItem hd" style="left:840px !important;top:716px !important;" id="item6877" data-src="assets/images/item_6877.png"/>
+      </a><div id="item5642" class="pageItem panzoom" alt="Overlay 07 - Venice Pan and Zoom">
+        <img class="pageItem content" src="assets/images/blank.gif" id="item5642_0" width="541" data-src="assets/images/item5642_0.png"/>
+      </div>
+    </div>
+  </li>
+  <li class="page" data-name="9">
+    <div class="page-scale-wrap mq-none mq-default" role="region" data-layout-name="undefined" style="width:1024px;height:768px;">
+      <div id="item5739" alt="Background" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="SENSE / INTERACTIVE EDITION" class="pageItem hd" style="left:48px !important;top:32px !important;" id="item5759" data-src="assets/images/item_5759.png"/>
+      <img src="assets/images/blank.gif" alt="9 / SCROLL / TEXT" class="pageItem hd" style="left:798px !important;top:32px !important;" id="item5782" data-src="assets/images/item_5782.png"/>
+      <div id="item5786" alt="Rectangle" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="把长文，收进一扇窗" class="pageItem hd" style="left:48px !important;top:103px !important;" id="item5806" data-src="assets/images/item_5806.png"/>
+      <img src="assets/images/blank.gif" alt="知识经济 / 在左侧阅读窗内上下滚动" class="pageItem hd" style="left:50px !important;top:175px !important;" id="item5829" data-src="assets/images/item_5829.png"/>
+      <div id="item5833" alt="Rectangle" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="SENSE / 11.19 / INTERACTIVE DESIGN" class="pageItem hd" style="left:48px !important;top:718px !important;" id="item5853" data-src="assets/images/item_5853.png"/>
+      <img src="assets/images/blank.gif" alt="09" class="pageItem hd" style="left:914px !important;top:717px !important;" id="item5876" data-src="assets/images/item_5876.png"/>
+      <img src="assets/images/blank.gif" alt="READ / KNOWLEDGE" class="pageItem hd" style="left:674px !important;top:266px !important;" id="item5951" data-src="assets/images/item_5951.png"/>
+      <img src="assets/images/blank.gif" alt="内容延伸， 版面依然从容。" class="pageItem hd" style="left:671px !important;top:331px !important;" id="item5974" data-src="assets/images/item_5974.png"/>
+      <img src="assets/images/blank.gif" alt="在阅读窗内上下滑动， 继续阅读完整长文。 让信息随着手势展开。" class="pageItem hd" style="left:674px !important;top:439px !important;" id="item5997" data-src="assets/images/item_5997.png"/>
+      <img src="assets/images/blank.gif" alt="↑ 上下滚动 ↓" class="pageItem hd" style="left:674px !important;top:583px !important;" id="item6020" data-src="assets/images/item_6020.png"/>
+      <img src="assets/images/blank.gif" alt="将指针放进米白阅读窗滚动，或在触屏中上下滑动。" class="pageItem hd" style="left:50px !important;top:656px !important;" id="item6043" data-src="assets/images/item_6043.png"/><a href="javascript:nav.to(1);">
+        <img src="assets/images/blank.gif" alt="Back to Contents 8" class="pageItem hd" style="left:740px !important;top:716px !important;" id="item6903" data-src="assets/images/item_6903.png"/>
+      </a><a href="javascript:nav.to(10);">
+        <img src="assets/images/blank.gif" alt="Next Page 8" class="pageItem hd" style="left:840px !important;top:716px !important;" id="item6929" data-src="assets/images/item_6929.png"/>
+      </a><div id="item5907" class="pageItem assignment-scroll-text" tabindex="0" role="region" aria-label="可上下滚动的知识经济全文"><p>一、知识经济理论</p><p>知识经济，通俗地说就是“以知识为基础的经济”。从内涵来看，知识经济是经济增长直接依赖于知识和信息的生产、传播和使用，它以高技术产业为第一产业支柱，以智力资源为首要依托，是可持续发展的经济。按照世界经济合作及发展组织的说法，知识经济就是以现代科学技术为核心的，建立在知识和信息的生产、存储、使用和消费之上的经济。</p><p>知识经济理论形成于20世纪80年代初期。1983年，美国加州大学教授保罗·罗默提出了“新经济增长理论”，认为知识是一个重要的生产要素，它可以提高投资的收益。“新经济增长理论”的提出，标志着知识经济在理论上的初步形成。</p><p>知识经济与传统的工业经济相比，具有八大特征：(1)资源利用智力化 ；(2)资产投入无形化(3)知识利用产业化；(4)高科技产业支柱化；(5)经济发展可持续化；(6)世界经济全球化；(7)企业发展虚拟化； (8)人均收入差距扩大化</p><p>二、知识经济通过全球化经济对我国产生影响</p><p>1.对企业内涵的影响</p><p>首先，决定创办企业的不再是资本，而是知识和技术。传统的生产要素--土地、人力和资本已成为经济发展的限制力量而不再是驱动力，而知识将成为关键性的资源，成为企业发展的新动力。</p><p>其次，在企业里，拥有专门知识和技术的人才，地位迅速上升，举足轻重。</p><p>第三，企业的成功在于企业内技术人才拥有的正确的知识和技术。这一点，将深刻地动摇原有企业内的所有权基础，深刻改变企业的内涵。</p><p>2.对企业竞争行为的影响</p><p>在知识经济条件下，以知识为基础的企业的竞争优势将会发生根本变化，将从对资源的占有、配置、生产经验、技术和经营规模以及开发、加工、营销产品的能力等方面转变为以下几个方面：觅集、创造和更新智力资产的能力；智力资本和有形资本的有效配合能力；通过智力资本出现的资源最佳配置以及人力资源的开发能力等。</p><p>3.对企业管理方式的影响</p><p>首先，创新和服务将替代传统的控制和管理。依靠不断找出需要以及解决办法之间的联系。成功企业所提供的价值多来自于问题所需要的专业研究、工程和设计服务，以及把上述两方面连接起来的专门化战略，加上金融和管理服务。</p><p>其次，企业的柔性管理将具有更重要的意义。企业管理将更注重人的因素，更强调以人为中心。通过实施各种行之有效的管理措施，最大限度地发挥人的智慧和潜能，发挥在科技创新中的积极性和创造性。并有效地协调生产组织、生产群体乃至人与人之间的关系，来实现企业的目标。</p></div>
+    </div>
+  </li>
+  <li class="page" data-name="10">
+    <div class="page-scale-wrap mq-none mq-default" role="region" data-layout-name="undefined" style="width:1024px;height:768px;">
+      <div id="item6047" alt="Background" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="SENSE / INTERACTIVE EDITION" class="pageItem hd" style="left:48px !important;top:32px !important;" id="item6067" data-src="assets/images/item_6067.png"/>
+      <img src="assets/images/blank.gif" alt="10 / SCROLL / IMAGES" class="pageItem hd" style="left:798px !important;top:32px !important;" id="item6090" data-src="assets/images/item_6090.png"/>
+      <div id="item6094" alt="Rectangle" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="让风景，向下一程延伸" class="pageItem hd" style="left:48px !important;top:103px !important;" id="item6114" data-src="assets/images/item_6114.png"/>
+      <img src="assets/images/blank.gif" alt="五张风景 / 在画廊内横向拖动" class="pageItem hd" style="left:50px !important;top:175px !important;" id="item6137" data-src="assets/images/item_6137.png"/>
+      <div id="item6141" alt="Rectangle" class="pageItem ">&nbsp;</div>
+      <img src="assets/images/blank.gif" alt="SENSE / 11.19 / INTERACTIVE DESIGN" class="pageItem hd" style="left:48px !important;top:718px !important;" id="item6161" data-src="assets/images/item_6161.png"/>
+      <img src="assets/images/blank.gif" alt="10" class="pageItem hd" style="left:914px !important;top:717px !important;" id="item6184" data-src="assets/images/item_6184.png"/>
+      <img src="assets/images/blank.gif" alt="在画廊内左右滑动，查看 5 张完整风景图片。" class="pageItem hd" style="left:50px !important;top:656px !important;" id="item6516" data-src="assets/images/item_6516.png"/><a href="javascript:nav.to(1);">
+        <img src="assets/images/blank.gif" alt="Back to Contents 9" class="pageItem hd" style="left:740px !important;top:716px !important;" id="item6955" data-src="assets/images/item_6955.png"/>
+      </a><div id="item6345" class="pageItem assignment-scroll-images" tabindex="0" role="region" aria-label="可横向滑动的五张风景图片"><div><figure><img draggable="false" src="assets/images/assignment-landscape-1.jpg" alt="风景 1"><figcaption>LANDSCAPE / 01</figcaption></figure><figure><img draggable="false" src="assets/images/assignment-landscape-2.jpg" alt="风景 2"><figcaption>LANDSCAPE / 02</figcaption></figure><figure><img draggable="false" src="assets/images/assignment-landscape-3.jpg" alt="风景 3"><figcaption>LANDSCAPE / 03</figcaption></figure><figure><img draggable="false" src="assets/images/assignment-landscape-4.jpg" alt="风景 4"><figcaption>LANDSCAPE / 04</figcaption></figure><figure><img draggable="false" src="assets/images/assignment-landscape-5.jpg" alt="风景 5"><figcaption>LANDSCAPE / 05</figcaption></figure></div></div>
+    </div>
+  </li>
+</ul>
+<div id="prefooter" style="float:left;height:1px;">&nbsp;</div>
+</div>
+<footer id="in5footer"><a href="https://ajarproductions.com/pages/products/in5/?ref=footer" target="_blank" >Built with in5</a>.</footer>
+</div>
+<script id="assignment-scroll-events">(function(){var el=document.getElementById('item6345'),down=false,x=0,start=0;el.addEventListener('pointerdown',function(e){if(e.pointerType==='mouse'){down=true;x=e.clientX;start=el.scrollLeft;el.setPointerCapture(e.pointerId);el.style.cursor='grabbing';}});el.addEventListener('pointermove',function(e){if(down){el.scrollLeft=start+x-e.clientX;e.preventDefault();}});function stop(){down=false;el.style.cursor='grab';}el.addEventListener('pointerup',stop);el.addEventListener('pointercancel',stop);el.addEventListener('wheel',function(e){if(Math.abs(e.deltaY)>Math.abs(e.deltaX)){el.scrollLeft+=e.deltaY;e.preventDefault();}},{passive:false});})();</script></body>
+</html>

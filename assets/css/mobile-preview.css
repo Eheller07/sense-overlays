@@ -1,0 +1,4 @@
+html { background: #161d1f; }
+body { margin: 0; overflow-x: hidden; }
+#container-wrap { zoom: var(--publication-scale, 1); }
+#slider.paper-vertical { padding-inline: 0; }
